@@ -85,7 +85,9 @@ class MockReference extends Mock implements Reference {
 
   @override
   Future<String> getDownloadURL() {
-    return Future.value('https://firebasestorage.googleapis.com/$_path');
+    return Future.value(
+      'https://image.shutterstock.com/image-photo/confident-african-american-businesswoman-leading-600w-1903208815.jpg',
+    );
   }
 
   @override
