@@ -88,6 +88,7 @@ class MockReference extends Mock implements Reference {
     return Future.value('https://firebasestorage.googleapis.com/$_path');
   }
 
+  @override
   Future<FullMetadata> updateMetadata(SettableMetadata metadata) {
     // ignore: omit_local_variable_types
     final newSettable = _getNewSettableFromFullMetadata(
