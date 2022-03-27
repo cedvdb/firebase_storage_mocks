@@ -85,7 +85,7 @@ class MockReference extends Mock implements Reference {
 
   @override
   Future<String> getDownloadURL() {
-    return Future.value(fullPath.substring(0, fullPath.length - 1));
+    return Future.value('https://firebasestorage.googleapis.com/$_path');
   }
 
   Future<FullMetadata> updateMetadata(SettableMetadata metadata) {
